@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: black;
+        animation-name: mohit;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        position: relative;
+      }
+
+      @keyframes mohit {
+        from {
+          width: 100px;
+          background-color: green;
+          border-radius: 5px;
+          height: 200px;
+        }
+
+        to {
+          width: 1500px;
+          background-color: blue;
+          border-radius: 50px;
+          height: 800px;
+        }
+      }
+
+      .box-2 {
+        height: 200px;
+        width: 200px;
+        background-color: black;
+        animation-name: mohit1;
+        animation-duration: 5s;
+        position: absolute;
+        top: 0px;
+      }
+
+      @keyframes mohit1 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+
+        25% {
+          left: 400px;
+          top: 0;
+          border-radius: 250px;
+          background-color: red;
+        }
+
+        50% {
+          left: 400px;
+          top: 400px;
+          border-radius: 10px;
+          background-color: yellow;
+        }
+
+        75% {
+          left: 1200px;
+          top: 400px;
+          border-radius: 250px;
+          background-color: brown;
+        }
+
+        100% {
+          left: 0px;
+          top: 0px;
+          border-radius: 10px;
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box-2"></div>
+  </body>
+</html>
